@@ -16,7 +16,7 @@ export default function NavigationBar() {
     <nav className="w-full py-4 px-16 flex items-center border-b border-gray-200 sticky top-0 z-50 bg-white">
       {/* Left: Logo and main links */}
       <div className="flex items-center space-x-8 flex-1">
-        <Image src="/comondo_1tc.png" alt="Comondo Logo" width={150} height={50} className="object-contain" />
+        <Image src="comondo_1tc.png" alt="Comondo Logo" width={150} height={50} className="object-contain" />
         <Link href="/" className={linkClass('/')}>Home</Link>
         <Link href="/Product" className={linkClass('/Product')}>Our Product</Link>
       </div>

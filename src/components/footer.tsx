@@ -6,7 +6,7 @@ export default function Footer() {
       {/* Logo */}
       <div>
         <Image
-          src="/comondo_logo.png"
+          src="comondo_logo.png"
           alt="Comondo Logo"
           width={120}
           height={120}

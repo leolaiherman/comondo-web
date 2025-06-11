@@ -12,25 +12,25 @@ export default function Home() {
     {
       title: "Fresh Cream",
       description: "We use coconuts within 7 days of being handpicked",
-      imgSrc: "/freshquok.svg",
+      imgSrc: "freshquok.svg",
     },
     {
       title: "Longer shelf-life",
       description:
         "We have reimagined the traditional extraction process. While others expire in hours, our cream stays fresh and stable longer without compromising purity.",
-      imgSrc: "/longlifequok.svg",
+      imgSrc: "longlifequok.svg",
     },
     {
       title: "100% Plant-Based",
       description:
         "Our product is dairy-free and vegan friendly. Made for everyone, whether you are vegan, lactose-intolerant, or just love a cleaner label.",
-      imgSrc: "/plantquok.svg",
+      imgSrc: "plantquok.svg",
     },
     {
       title: "No Cholesterol",
       description:
         "Our coconut cream is 100% plant-based and naturally free from cholesterol, making it a smarter, heart-friendly choice for your daily meals.",
-      imgSrc: "/nocholesquok.svg",
+      imgSrc: "nocholesquok.svg",
     },
   ];
 
@@ -52,7 +52,7 @@ export default function Home() {
         </div>
         <div className="flex justify-end items-center">
           <img
-            src="/CoconutTree.png"
+            src="CoconutTree.png"
             width={554}
             height={484}
             alt="Coconut Beach"
@@ -76,7 +76,7 @@ export default function Home() {
             "-8px 8px 30px -12px rgba(0,0,0,0.15), inset 0px 0px 21px 0px rgba(0,0,0,0.10), inset 0px 4px 16px 0px rgba(255,255,255,0.13)",
           }}
           >
-          <img src="/comondo_logo.png"
+          <img src="comondo_logo.png"
             width={554}
             height={484}
             alt="Comondo Logo" className="p-8 rounded-[80px]" />
@@ -100,7 +100,7 @@ export default function Home() {
           <h2 className="text-[40px] leading-[56px] font-extrabold mb-0">Our Happy Start!</h2>
           <p className="text-[20px] leading-[24px] mb-0 ">Like a Quokka beaming at the sunrise, Comondo began with a cheerful idea! </p>
         </div>
-        <img src="/quokka-landing.svg" width= {500} height={500} alt="Comondo Logo" className="w-full h-auto" />
+        <img src="quokka-landing.svg" width= {500} height={500} alt="Comondo Logo" className="w-full h-auto" />
         <div className="w-full text-left flex flex-col gap-6">
           <h2 className="text-[40px] leading-[56px] font-extrabold mb-0">Coco Cream</h2>
           <p className="text-[20px] leading-[24px] mb-0 ">We began by crafting fresh coconut cream, perfect for anyone’s cooking, making every dish pop with delight!</p>

@@ -1,0 +1,91 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #87CEEB, #FFE4B5); /* Sky to sandy beach */
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.canvasContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0; /* Initial state for GSAP animation */
+}
+
+/* Tropical palm leaf overlay */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://media-public.canva.com/V2eCg/MAE4OmV2eCg/1/tl.png') repeat;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.heroText {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #120325;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  opacity: 0; /* Initial state for GSAP animation */
+}
+
+.heroText h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  /* font-family: 'Nunito', Arial, sans-serif; */
+}
+
+.heroText p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  /* font-family: 'Nunito', Arial, sans-serif; */
+}
+
+.ctaButton {
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  background-color: #339777;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.ctaButton:hover {
+  background-color: #1B5E20;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .heroText h1 {
+    font-size: 2.5rem;
+  }
+
+  .heroText p {
+    font-size: 1.2rem;
+  }
+
+  .ctaButton {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+  }
+}

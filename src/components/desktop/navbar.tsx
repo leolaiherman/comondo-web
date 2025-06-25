@@ -18,11 +18,11 @@ export default function NavigationBar() {
       <div className="flex items-center space-x-8 flex-1">
         <Image src="comondo_1tc.png" alt="Comondo Logo" width={150} height={50} className="object-contain" />
         <Link href="/" className={linkClass('/')}>Home</Link>
-        <Link href="/Product" className={linkClass('/Product')}>Our Product</Link>
+        {/* <Link href="/Product" className={linkClass('/Product')}>Our Product</Link> */}
       </div>
       {/* Right: CTA and language */}
       <div className="flex items-center space-x-4">
-        <Link href="/ContactUs"
+        <Link href="https://linktr.ee/comondoid"
             className="bg-[#339777] text-white text-[20px] font-semibold rounded-[24px] flex items-center justify-center py-4 px-4"
             style={{
                 fontSize: 20,

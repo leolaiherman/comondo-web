@@ -9,13 +9,11 @@ export default function NavigationBar() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const linkClass = (href: string) =>
-    `block py-2 px-4 text-lg font-semibold transition-colors ${
-      pathname === href ? 'text-[#E2861D]' : 'text-[#0C4D38]'
-    } hover:text-[#E2861D]`;
+  const baseLink = 'block py-2 px-4 text-lg font-semibold transition-colors hover:text-[var(--color-secondary)]';
+  const linkStyle = (href: string) => ({ color: pathname === href ? 'var(--color-secondary)' : 'var(--color-primary)' });
 
   return (
-    <nav className="w-full py-3 px-4 flex items-center justify-between border-b border-gray-200 sticky top-0 z-50 bg-white">
+    <nav className="w-full py-4 px-4 flex items-center justify-between gap-4 border-b border-gray-200 sticky top-0 z-50 bg-white">
       {/* Left: Coconut icon as menu toggle */}
       <button
         className="flex items-center"
@@ -33,7 +31,7 @@ export default function NavigationBar() {
       {/* Right: Language selector */}
       <div className="flex items-center">
         <select
-          className="border-none focus:outline-none bg-transparent text-[#120305] text-base font-semibold"
+          className="border-none focus:outline-none bg-transparent text-[var(--foreground)] text-base font-semibold cursor-pointer"
           style={{ fontWeight: 700, height: "auto" }}
         >
           <option>EN</option>
@@ -44,23 +42,29 @@ export default function NavigationBar() {
       {/* Mobile Menu Overlay */}
       {menuOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-40 z-50 flex flex-col">
-          <div className="bg-white w-3/4 max-w-xs h-full shadow-lg p-6 flex flex-col gap-4">
+          <div className="bg-white w-3/4 max-w-xs h-full shadow-lg p-6 flex flex-col gap-6">
             <button
-              className="self-end mb-4"
+              className="self-end mb-2"
               onClick={() => setMenuOpen(false)}
               aria-label="Close menu"
             >
-              <span className="text-2xl font-bold">&times;</span>
+              <span className="text-3xl font-bold">&times;</span>
             </button>
-            <Link href="/" className={linkClass('/')} onClick={() => setMenuOpen(false)}>
+            <Link href="/" className={baseLink} style={linkStyle('/')} onClick={() => setMenuOpen(false)}>
               Home
             </Link>
-            <Link href="/Product" className={linkClass('/Product')} onClick={() => setMenuOpen(false)}>
-              Our Product
+            <Link href="#about" className={baseLink} style={linkStyle('#about')} onClick={() => setMenuOpen(false)}>
+              About
+            </Link>
+            <Link href="#products" className={baseLink} style={linkStyle('#products')} onClick={() => setMenuOpen(false)}>
+              Products
+            </Link>
+            <Link href="#impact" className={baseLink} style={linkStyle('#impact')} onClick={() => setMenuOpen(false)}>
+              Impact
             </Link>
             <Link
-              href="/ContactUs"
-              className="bg-[#339777] text-white text-lg font-semibold rounded-[24px] flex items-center justify-center py-3 px-4 mt-4"
+              href="https://linktr.ee/comondoid"
+              className="bg-[var(--color-accent)] text-white text-lg font-semibold rounded-full flex items-center justify-center py-3 px-6 mt-4 hover:bg-[var(--color-accent-hover)] transition-all"
               style={{ fontSize: 18 }}
               onClick={() => setMenuOpen(false)}
             >

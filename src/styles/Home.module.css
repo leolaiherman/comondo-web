@@ -42,7 +42,7 @@
   position: relative;
   z-index: 2;
   text-align: center;
-  color: #120325;
+  color: var(--foreground);
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
   opacity: 0; /* Initial state for GSAP animation */
 }
@@ -62,7 +62,7 @@
 .ctaButton {
   padding: 1rem 2rem;
   font-size: 1.3rem;
-  background-color: #339777;
+  background-color: var(--color-accent);
   color: white;
   border: none;
   border-radius: 24px;
@@ -71,7 +71,7 @@
 }
 
 .ctaButton:hover {
-  background-color: #1B5E20;
+  background-color: var(--color-primary-dark);
   transform: scale(1.05);
 }
 
@@ -88,4 +88,51 @@
     padding: 0.8rem 1.5rem;
     font-size: 1.1rem;
   }
+}
+
+
+/* animation */
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+@keyframes slide-up-delay {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+@keyframes slide-left {
+  from { opacity: 0; transform: translateX(-80px);}
+  to { opacity: 1; transform: translateX(0);}
+}
+@keyframes slide-right {
+  from { opacity: 0; transform: translateX(80px);}
+  to { opacity: 1; transform: translateX(0);}
+}
+@keyframes pop-in {
+  from { opacity: 0; transform: scale(0.8);}
+  to { opacity: 1; transform: scale(1);}
+}
+
+.animateFadeIn {
+  animation: fade-in 1s ease-out both;
+}
+.animateSlideUp {
+  animation: slide-up 1s ease-out both;
+}
+.animateSlideUpDelay {
+  animation: slide-up-delay 1s 0.2s ease-out both;
+}
+.animate-slide-left {
+  animation: slide-left 1s ease-out both;
+}
+.animate-slide-right {
+  animation: slide-right 1s ease-out both;
+}
+.animatePopIn {
+  animation: pop-in 0.7s ease-out both;
 }

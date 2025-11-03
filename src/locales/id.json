@@ -1,0 +1,128 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "products": "Produk",
+    "impact": "Dampak",
+    "contact_cta": "Hubungi Kami",
+    "en": "EN",
+    "id": "ID"
+  },
+  "footer": {
+    "contact_us": "Hubungi Kami",
+    "email_label": "Email:",
+    "instagram_label": "Instagram:",
+    "copy": "© {year} Comondo. Semua hak dilindungi."
+  },
+  "home": {
+    "hero": {
+      "title_prefix": "Membangun Masa Depan",
+      "title_highlight": "Ekonomi Kelapa",
+      "subtitle": "Ekosistem kelapa yang sederhana dan berkelanjutan — dari petani hingga produk global.",
+      "get_started": "Mulai",
+      "our_products": "Produk Kami"
+    },
+    "about": {
+      "title": "Apa yang Kami Lakukan",
+      "description": "COMONDO membangun ekosistem kelapa yang komprehensif—mengubah setiap bagian kelapa menjadi produk bernilai untuk pasar global"
+    },
+    "what": {
+      "fullUtilization_title": "Pemanfaatan Kelapa Secara Penuh",
+      "fullUtilization_desc": "Kami mengekstrak nilai dari setiap bagian kelapa—dari daging dan air hingga cangkang dan serat—meminimalkan limbah dan memaksimalkan keberlanjutan",
+      "greenEconomy_title": "Penciptaan Ekonomi Hijau",
+      "greenEconomy_desc": "Membangun rantai pasok regeneratif yang memberdayakan petani lokal sekaligus menghadirkan produk premium untuk konsumen sadar lingkungan di seluruh dunia",
+      "innovation_title": "Pertumbuhan Berbasis Inovasi",
+      "innovation_desc": "Menggabungkan kearifan tradisional kelapa dengan teknologi modern untuk menciptakan produk generasi berikutnya untuk berbagai industri"
+    },
+    "mission": {
+      "title": "Misi & Visi",
+      "mission_title": "Misi Kami",
+      "mission_text": "Mengubah setiap kelapa menjadi nilai — tanpa limbah dan dengan dampak positif",
+      "vision_title": "Visi Kami",
+      "vision_text": "Membangun merek kelapa paling tepercaya di dunia untuk ekonomi yang lebih hijau",
+      "what_is_comondo": "Apa Arti COMONDO?",
+      "the_coconut_world": "Dunia Kelapa"
+    },
+    "impact": {
+      "title": "Dampak & Keberlanjutan",
+      "description": "Sejalan dengan Tujuan Pembangunan Berkelanjutan PBB, kami membangun bisnis yang menciptakan perubahan positif",
+      "sdg": {
+        "2": "Tanpa Kelaparan",
+        "8": "Pekerjaan Layak",
+        "12": "Konsumsi yang Bertanggung Jawab",
+        "13": "Aksi Iklim",
+        "15": "Kehidupan di Darat"
+      }
+    },
+    "advantage": {
+      "title": "Keunggulan COMONDO",
+      "description": "Mengapa investor dan mitra memilih membangun ekonomi kelapa bersama kami"
+    },
+    "stats": {
+      "global_market": "Pasar Kelapa Global (2024)",
+      "tons_produced": "Ton Diproduksi Per Tahun",
+      "indonesia_rank": "Peringkat Global Indonesia sebagai Produsen Kelapa",
+      "growth_rate": "Tingkat Pertumbuhan Tahunan"
+    },
+    "esg": {
+      "environmental": {
+        "title": "Lingkungan",
+        "desc": "Model nol limbah. Setiap kelapa penting."
+      },
+      "social": {
+        "title": "Sosial",
+        "desc": "Kemitraan perdagangan yang adil dengan petani lokal"
+      },
+      "governance": {
+        "title": "Tata Kelola",
+        "desc": "Operasi yang transparan dan bertanggung jawab"
+      }
+    },
+    "advantage_cards": {
+      "strategic_location": {
+        "title": "Lokasi Strategis",
+        "desc": "Indonesia — produsen kelapa terbesar di dunia"
+      },
+      "full_value_chain": {
+        "title": "Rantai Nilai Penuh",
+        "desc": "Dari petani ke produk — kualitas di setiap langkah"
+      },
+      "multiple_revenue_streams": {
+        "title": "Beberapa Sumber Pendapatan",
+        "desc": "Portofolio yang terdiversifikasi di beberapa industri"
+      },
+      "scalable_model": {
+        "title": "Model yang Dapat Diskalakan",
+        "desc": "Dibangun untuk skala — proses dan kemitraan"
+      }
+    },
+    "products": {
+      "badge": "Produk Pertama Kami",
+      "title": "KOKO Santan",
+      "description": "Santan kelapa segar premium yang memulai perjalanan kami—menetapkan standar baru untuk kualitas dan kesegaran",
+      "feature_plantbased": "100% Berbasis Tumbuhan",
+      "feature_plantbased_desc": "Bebas susu dan ramah vegan",
+      "feature_cholesterol": "Tanpa Kolesterol",
+      "feature_cholesterol_desc": "Secara alami bebas kolesterol",
+      "feature_farmers": "Langsung dari Petani",
+      "feature_farmers_desc": "Sumber adil; mendukung komunitas",
+      "learn_more": "Pelajari Lebih Lanjut Tentang KOKO Santan"
+    },
+    "contact": {
+      "title": "Bergabung dengan Revolusi Kelapa",
+      "subtitle": "Apakah Anda investor, mitra, atau penggemar kelapa—ada tempat untuk Anda di ekosistem COMONDO",
+      "investors": "Investor",
+      "investors_desc": "Jelajahi peluang dalam ekonomi kelapa yang berkembang",
+      "partners": "Mitra",
+      "partners_desc": "Bermitra pada inovasi dan distribusi produk kelapa",
+      "customers": "Pelanggan",
+      "customers_desc": "Temukan produk kelapa premium kami",
+      "investment_info": "Info Investasi",
+      "partner_with_us": "Bermitra Dengan Kami",
+      "shop_now": "Belanja Sekarang",
+      "ready_title": "Siap Untuk Tahu Lebih Lanjut?",
+      "ready_text": "Hubungi tim kami untuk mengeksplorasi bagaimana COMONDO dapat menciptakan nilai untuk Anda",
+      "contact_us": "Hubungi Kami"
+    }
+  }
+}

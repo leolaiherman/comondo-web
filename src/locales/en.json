@@ -1,0 +1,129 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "impact": "Impact",
+    "contact_cta": "Contact Us",
+    "en": "EN",
+    "id": "ID"
+  },
+  "footer": {
+    "contact_us": "Contact Us",
+    "email_label": "Email:",
+    "instagram_label": "Instagram:",
+    "copy": "© {year} Comondo. All rights reserved."
+  },
+  "home": {
+    "hero": {
+      "title_prefix": "Building the Future of",
+      "title_highlight": "Coconut Economy",
+      "subtitle": "A simple, sustainable coconut ecosystem — from farmers to global products.",
+      "get_started": "Get Started",
+      "our_products": "Our Products"
+    },
+    "about": {
+      "title": "What We Do",
+      "description": "COMONDO is building a comprehensive coconut ecosystem—transforming every part of the coconut into valuable products for global markets"
+    },
+    "what": {
+      "fullUtilization_title": "Full Coconut Utilization",
+      "fullUtilization_desc": "We extract value from every part of the coconut—from meat and water to shell and fiber—minimizing waste and maximizing sustainability",
+      "greenEconomy_title": "Green Economy Creation",
+      "greenEconomy_desc": "Building regenerative supply chains that empower local farmers while delivering premium products to conscious consumers worldwide",
+      "innovation_title": "Innovation-Driven Growth",
+      "innovation_desc": "Combining traditional coconut wisdom with modern technology to create next-generation products for diverse industries"
+    },
+    "mission": {
+      "title": "Mission & Vision",
+      "mission_title": "Our Mission",
+      "mission_text": "Turn every coconut into value — with zero waste and positive impact.",
+      "vision_title": "Our Vision",
+      "vision_text": "Build the world’s most trusted coconut brand for a greener economy.",
+      "what_is_comondo": "What Does COMONDO Mean?",
+      "the_coconut_world": "The Coconut World"
+    },
+    "impact": {
+      "title": "Impact & Sustainability",
+      "description": "Aligned with the UN Sustainable Development Goals, we're building a business that creates positive change",
+      "sdg": {
+        "2": "Zero Hunger",
+        "8": "Decent Work",
+        "12": "Responsible Consumption",
+        "13": "Climate Action",
+        "15": "Life on Land"
+      }
+    },
+    "advantage": {
+      "title": "The COMONDO Advantage",
+      "description": "Why investors and partners choose to build the coconut economy with us"
+    },
+    "stats": {
+      "global_market": "Global Coconut Market (2024)",
+      "tons_produced": "Tons Produced Annually",
+      "indonesia_rank": "Indonesia Global Rank of Coconut Producers",
+      "growth_rate": "Annual Market Growth Rate"
+    },
+    "esg": {
+      "environmental": {
+        "title": "Environmental",
+        "desc": "Zero-waste model. Every coconut matters."
+      },
+      "social": {
+        "title": "Social",
+        "desc": "Fair trade partnerships with local farmers."
+      },
+      "governance": {
+        "title": "Governance",
+        "desc": "Transparent, responsible operations."
+      }
+    },
+    "advantage_cards": {
+      "strategic_location": {
+        "title": "Strategic Location",
+        "desc": "Indonesia — world’s largest coconut producer."
+      },
+      "full_value_chain": {
+        "title": "Full Value Chain",
+        "desc": "From farm to product — quality at every step."
+      },
+      "multiple_revenue_streams": {
+        "title": "Multiple Revenue Streams",
+        "desc": "Diversified portfolio across several industries."
+      },
+      "scalable_model": {
+        "title": "Scalable Model",
+        "desc": "Built to scale — processes and partnerships."
+      }
+    }
+    ,
+    "products": {
+      "badge": "Our First Product",
+      "title": "KOKO Santan",
+      "description": "Premium fresh coconut cream that started our journey—setting new standards for quality and freshness",
+      "feature_plantbased": "100% Plant-Based",
+      "feature_plantbased_desc": "Dairy-free and vegan-friendly.",
+      "feature_cholesterol": "No Cholesterol",
+      "feature_cholesterol_desc": "Naturally cholesterol-free.",
+      "feature_farmers": "Direct from Farmers",
+      "feature_farmers_desc": "Fair-trade sourcing; supports communities.",
+      "learn_more": "Learn More About KOKO Santan"
+    },
+    "contact": {
+      "title": "Join the Coconut Revolution",
+      "subtitle": "Whether you're an investor, partner, or coconut enthusiast—there's a place for you in the COMONDO ecosystem",
+      "investors": "Investors",
+      "investors_desc": "Explore opportunities in the growing coconut economy",
+      "partners": "Partners",
+      "partners_desc": "Collaborate on coconut innovation and distribution",
+      "customers": "Customers",
+      "customers_desc": "Discover our premium coconut products",
+      "investment_info": "Investment Info",
+      "partner_with_us": "Partner With Us",
+      "shop_now": "Shop Now",
+      "ready_title": "Ready to Learn More?",
+      "ready_text": "Get in touch with our team to explore how COMONDO can create value for you",
+      "contact_us": "Contact Us"
+    }
+  }
+}

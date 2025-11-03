@@ -3,14 +3,45 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useTranslation } from '@/components/ui/LanguageProvider'
 
 export default function NavigationBar() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const { lang, setLang, t } = useTranslation();
+  const [activeSection, setActiveSection] = useState<string>('hero');
 
-  const baseLink = 'block py-2 px-4 text-lg font-semibold transition-colors hover:text-[var(--color-secondary)]';
-  const linkStyle = (href: string) => ({ color: pathname === href ? 'var(--color-secondary)' : 'var(--color-primary)' });
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const ids = ['hero', 'about', 'mission', 'impact', 'advantage', 'products', 'contact'];
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries.filter((e) => e.isIntersecting);
+        if (visible.length > 0) {
+          visible.sort((a, b) => (b.intersectionRatio ?? 0) - (a.intersectionRatio ?? 0));
+          setActiveSection(visible[0].target.id);
+        }
+      },
+      { root: null, rootMargin: '-40% 0px -40% 0px', threshold: [0, 0.25, 0.5, 0.75, 1] }
+    );
+
+    ids.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+  const baseLink = 'block py-2 px-4 text-lg font-semibold transition-colors hover:text-(--color-secondary)';
+  const linkStyle = (href: string) => {
+    if (href.startsWith('#')) {
+      const id = href.replace('#', '');
+      return { color: activeSection === id ? 'var(--color-secondary)' : 'var(--color-primary)' };
+    }
+    return { color: pathname === href ? 'var(--color-secondary)' : 'var(--color-primary)' };
+  };
 
   return (
     <nav className="w-full py-4 px-4 flex items-center justify-between gap-4 border-b border-gray-200 sticky top-0 z-50 bg-white">
@@ -31,11 +62,13 @@ export default function NavigationBar() {
       {/* Right: Language selector */}
       <div className="flex items-center">
         <select
-          className="border-none focus:outline-none bg-transparent text-[var(--foreground)] text-base font-semibold cursor-pointer"
+          value={lang}
+          onChange={(e) => setLang(e.target.value as any)}
+          className="border-none focus:outline-none bg-transparent text-(--foreground) text-base font-semibold cursor-pointer"
           style={{ fontWeight: 700, height: "auto" }}
         >
-          <option>EN</option>
-          <option>ID</option>
+          <option value="en">{t('nav.en')}</option>
+          <option value="id">{t('nav.id')}</option>
         </select>
       </div>
 
@@ -50,25 +83,25 @@ export default function NavigationBar() {
             >
               <span className="text-3xl font-bold">&times;</span>
             </button>
-            <Link href="/" className={baseLink} style={linkStyle('/')} onClick={() => setMenuOpen(false)}>
-              Home
+            <Link href="#hero" className={baseLink} style={linkStyle('#hero')} onClick={() => setMenuOpen(false)}>
+              {t('nav.home')}
             </Link>
             <Link href="#about" className={baseLink} style={linkStyle('#about')} onClick={() => setMenuOpen(false)}>
-              About
+              {t('nav.about')}
             </Link>
             <Link href="#products" className={baseLink} style={linkStyle('#products')} onClick={() => setMenuOpen(false)}>
-              Products
+              {t('nav.products')}
             </Link>
             <Link href="#impact" className={baseLink} style={linkStyle('#impact')} onClick={() => setMenuOpen(false)}>
-              Impact
+              {t('nav.impact')}
             </Link>
             <Link
               href="https://linktr.ee/comondoid"
-              className="bg-[var(--color-accent)] text-white text-lg font-semibold rounded-full flex items-center justify-center py-3 px-6 mt-4 hover:bg-[var(--color-accent-hover)] transition-all"
+              className="bg-(--color-accent) text-white text-lg font-semibold rounded-full flex items-center justify-center py-3 px-6 mt-4 hover:bg-(--color-accent-hover) transition-all"
               style={{ fontSize: 18 }}
               onClick={() => setMenuOpen(false)}
             >
-              Contact Us
+              {t('nav.contact_cta')}
             </Link>
           </div>
           {/* Click outside to close */}

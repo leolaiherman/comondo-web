@@ -1,0 +1,6 @@
+- [ ] Validate the new mobile glassmorphism styles across Safari iOS and Chrome Android for parity.
+- [ ] Provide a no-`backdrop-filter` fallback token (e.g., semi-opaque background) for older browsers.
+- [ ] Stress-test the menu toggle animation for accessibility (prefers-reduced-motion) and keyboard usage.
+- [ ] Redesign the mobile menu layout to feel simpler and clearer per UX feedback.
+- [ ] Ensure the mobile menu close interaction works reliably from the cancel/overlay regions.
+- [ ] Implement hide-on-scroll-down and reveal-on-scroll-up behavior for the mobile navbar.

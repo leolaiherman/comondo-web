@@ -1,6 +1,6 @@
 "use client";
 
-import NavigationBar from "@/components/desktop/navbar";
+import NavigationBar from "@/components/Navbar";
 import Image from "next/image";
 import { useRef, useEffect, useState } from "react";
 import Footer from "@/components/desktop/footer";

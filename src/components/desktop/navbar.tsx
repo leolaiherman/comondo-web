@@ -67,10 +67,20 @@ export default function NavigationBar() {
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-6">
-          <Link href="#hero" className={baseLinkClasses + ' hover:text-(--color-secondary)'} style={linkStyle('#hero')}>{t('nav.home')}</Link>
-          <Link href="#about" className={baseLinkClasses + ' hover:text-(--color-secondary)'} style={linkStyle('#about')}>{t('nav.about')}</Link>
-          <Link href="#products" className={baseLinkClasses + ' hover:text-(--color-secondary)'} style={linkStyle('#products')}>{t('nav.products')}</Link>
-          <Link href="#impact" className={baseLinkClasses + ' hover:text-(--color-secondary)'} style={linkStyle('#impact')}>{t('nav.impact')}</Link>
+          <Link href="/" className={baseLinkClasses + ' hover:text-(--color-secondary)'} style={linkStyle('/')}>{t('nav.home')}</Link>
+          <Link href="/about" className={baseLinkClasses + ' hover:text-(--color-secondary)'} style={linkStyle('/about')}>{t('nav.about')}</Link>
+
+          {/* Products dropdown (desktop hover) */}
+          <div className="relative group">
+            <span className={baseLinkClasses + ' hover:text-(--color-secondary) cursor-pointer'}>{t('nav.products')}</span>
+            <div className="invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-150 absolute left-0 top-full mt-2 w-56 rounded-lg bg-white p-3 shadow-lg border border-black/5 z-50">
+              <Link href="/products/koko-santan" className="block py-2 px-3 rounded hover:bg-black/5 text-sm font-semibold">{'KOKO Santan'}</Link>
+              <Link href="/products/cocoingredients" className="block py-2 px-3 rounded hover:bg-black/5 text-sm font-semibold">{'CocoIngredients'}</Link>
+              <Link href="/products/techondo" className="block py-2 px-3 rounded hover:bg-black/5 text-sm font-semibold">{'Techondo'}</Link>
+            </div>
+          </div>
+
+          <Link href="/partner" className={baseLinkClasses + ' hover:text-(--color-secondary)'} style={linkStyle('/partner')}>{t('nav.partner')}</Link>
         </div>
       </div>
 
@@ -98,10 +108,19 @@ export default function NavigationBar() {
             <button className="self-end" onClick={() => setMenuOpen(false)} aria-label="Close menu">
               <span className="text-3xl font-bold">&times;</span>
             </button>
-            <Link href="#hero" className={baseLinkClasses + ' block py-2'} style={linkStyle('#hero')} onClick={() => setMenuOpen(false)}>{t('nav.home')}</Link>
-            <Link href="#about" className={baseLinkClasses + ' block py-2'} style={linkStyle('#about')} onClick={() => setMenuOpen(false)}>{t('nav.about')}</Link>
-            <Link href="#products" className={baseLinkClasses + ' block py-2'} style={linkStyle('#products')} onClick={() => setMenuOpen(false)}>{t('nav.products')}</Link>
-            <Link href="#impact" className={baseLinkClasses + ' block py-2'} style={linkStyle('#impact')} onClick={() => setMenuOpen(false)}>{t('nav.impact')}</Link>
+            <Link href="/" className={baseLinkClasses + ' block py-2'} style={linkStyle('/')} onClick={() => setMenuOpen(false)}>{t('nav.home')}</Link>
+            <Link href="/about" className={baseLinkClasses + ' block py-2'} style={linkStyle('/about')} onClick={() => setMenuOpen(false)}>{t('nav.about')}</Link>
+
+            <details className="mt-1">
+              <summary className="cursor-pointer py-2 text-[18px] font-semibold">{t('nav.products')}</summary>
+              <div className="mt-2 flex flex-col pl-3">
+                <Link href="/products/koko-santan" className="py-2 text-base font-semibold" onClick={() => setMenuOpen(false)}>KOKO Santan</Link>
+                <Link href="/products/cocoingredients" className="py-2 text-base font-semibold" onClick={() => setMenuOpen(false)}>CocoIngredients</Link>
+                <Link href="/products/techondo" className="py-2 text-base font-semibold" onClick={() => setMenuOpen(false)}>Techondo</Link>
+              </div>
+            </details>
+
+            <Link href="/partner" className={baseLinkClasses + ' block py-2'} style={linkStyle('/partner')} onClick={() => setMenuOpen(false)}>{t('nav.partner')}</Link>
             <Link href="https://linktr.ee/comondoid" className="mt-4 bg-(--color-accent) text-white font-semibold rounded-full flex items-center justify-center py-3 px-4" onClick={() => setMenuOpen(false)}>{t('nav.contact_cta')}</Link>
           </div>
           <div className="flex-1" onClick={() => setMenuOpen(false)} />

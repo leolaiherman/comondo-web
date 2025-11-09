@@ -6,7 +6,9 @@
     "impact": "Impact",
     "contact_cta": "Contact Us",
     "en": "EN",
-    "id": "ID"
+    "id": "ID",
+    "partner": "Partner With Us",
+    "language_label": "Language"
   },
   "footer": {
     "contact_us": "Contact Us",
@@ -125,5 +127,42 @@
       "ready_text": "Get in touch with our team to explore how COMONDO can create value for you",
       "contact_us": "Contact Us"
     }
+  }
+  ,
+  "about": {
+    "title": "About Us",
+    "subtitle": "Comondo — The Coconut World: elevating coconuts from commodity to innovation.",
+    "who": {
+      "title": "Who We Are",
+      "body": "Comondo stands for 'The Coconut World.' We believe Indonesia's coconuts deserve to be elevated — not just as raw commodities, but as valuable innovations that feed the world."
+    },
+    "story": {
+      "title": "Our Story",
+      "body": "What began as a quest to create fresher, cleaner coconut cream has evolved into a mission to build an integrated ecosystem connecting farmers, technology, and global buyers."
+    },
+    "values": {
+      "title": "Our Values",
+      "integrity": "Integrity in every partnership",
+      "innovation": "Innovation rooted in nature",
+      "sustainability": "Sustainability in every step"
+    },
+    "cta_title": "Join the Coconut Movement",
+    "cta_body": "Partner with us to grow a sustainable, transparent coconut economy that benefits farmers and customers alike.",
+    "cta_button": "Partner With Us"
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "A family of products powered by a single ecosystem — quality, traceability, and scale.",
+    "koko": { "cta": "Discover KOKO Santan" },
+    "coco": { "cta": "Explore CocoIngredients" },
+    "techondo": { "cta": "Learn About Techondo" }
+  },
+  "partner": {
+    "title": "Partner With Us",
+    "subtitle": "We collaborate with investors, distributors, manufacturers and communities to build the coconut economy.",
+    "investors_body": "Join our journey toward a full-stack coconut ecosystem — from production to digital innovation.",
+    "businesses_body": "Source sustainable, high-quality coconut products or collaborate on distribution and technology.",
+    "communities_body": "Be part of our sustainable supply and training programs.",
+    "get_in_touch": "Get in Touch"
   }
 }

@@ -6,7 +6,9 @@
     "impact": "Dampak",
     "contact_cta": "Hubungi Kami",
     "en": "EN",
-    "id": "ID"
+    "id": "ID",
+    "partner": "Bermitra Dengan Kami",
+    "language_label": "Bahasa"
   },
   "footer": {
     "contact_us": "Hubungi Kami",
@@ -124,5 +126,42 @@
       "ready_text": "Hubungi tim kami untuk mengeksplorasi bagaimana COMONDO dapat menciptakan nilai untuk Anda",
       "contact_us": "Hubungi Kami"
     }
+  }
+  ,
+  "about": {
+    "title": "Tentang Kami",
+    "subtitle": "Comondo — Dunia Kelapa: mengangkat kelapa dari komoditas menjadi inovasi.",
+    "who": {
+      "title": "Siapa Kami",
+      "body": "Comondo berarti 'Dunia Kelapa.' Kami percaya kelapa Indonesia layak diangkat — bukan hanya sebagai komoditas mentah, tetapi sebagai inovasi bernilai yang memberi makan dunia."
+    },
+    "story": {
+      "title": "Cerita Kami",
+      "body": "Apa yang dimulai dari upaya menciptakan santan yang lebih segar dan bersih telah berkembang menjadi misi untuk membangun ekosistem terintegrasi yang menghubungkan petani, teknologi, dan pembeli global."
+    },
+    "values": {
+      "title": "Nilai-nilai Kami",
+      "integrity": "Integritas dalam setiap kemitraan",
+      "innovation": "Inovasi yang berakar pada alam",
+      "sustainability": "Keberlanjutan di setiap langkah"
+    },
+    "cta_title": "Bergabung dalam Gerakan Kelapa",
+    "cta_body": "Bermitra dengan kami untuk mengembangkan ekonomi kelapa yang berkelanjutan dan transparan yang menguntungkan petani dan pelanggan.",
+    "cta_button": "Bermitra Dengan Kami"
+  },
+  "products": {
+    "title": "Produk Kami",
+    "subtitle": "Keluarga produk yang didukung oleh satu ekosistem — kualitas, keterlacakan, dan skala.",
+    "koko": { "cta": "Temukan KOKO Santan" },
+    "coco": { "cta": "Jelajahi CocoIngredients" },
+    "techondo": { "cta": "Pelajari Techondo" }
+  },
+  "partner": {
+    "title": "Bermitra Dengan Kami",
+    "subtitle": "Kami bekerja sama dengan investor, distributor, pabrikan dan komunitas untuk membangun ekonomi kelapa.",
+    "investors_body": "Bergabunglah dalam perjalanan kami menuju ekosistem kelapa penuh — dari produksi hingga inovasi digital.",
+    "businesses_body": "Sumber produk kelapa berkualitas berkelanjutan atau bermitra dalam distribusi dan teknologi.",
+    "communities_body": "Jadilah bagian dari program pasokan berkelanjutan dan pelatihan kami.",
+    "get_in_touch": "Hubungi Kami"
   }
 }
